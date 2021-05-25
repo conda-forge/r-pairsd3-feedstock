@@ -16,7 +16,6 @@ build:
   noarch: generic
   merge_build_host: True  # [win]
   number: 1002
-  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,7 +39,7 @@ test:
 
 about:
   home: http://github.com/garthtarr/pairsD3/
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Creates an interactive scatterplot matrix using the D3 JavaScript library. See <http://d3js.org/>
     for more information on D3.
   license_family: GPL3
