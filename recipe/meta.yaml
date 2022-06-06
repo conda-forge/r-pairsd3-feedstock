@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pairsD3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pairsD3/pairsD3_{{ version }}.tar.gz
-  sha256: 02a37d885dd25e6ce74eff90aa87628113585d71158ad2a27797082723be8662
+  sha256: f90bf49217af2cece05c394ce3dbe0dee4366aabdfcd5892fe07687a4b4b31f0
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,10 +40,9 @@ test:
 about:
   home: http://github.com/garthtarr/pairsD3/
   license: GPL-3.0-or-later
-  summary: Creates an interactive scatterplot matrix using the D3 JavaScript library. See <http://d3js.org/>
-    for more information on D3.
+  summary: Creates an interactive scatterplot matrix using the D3 JavaScript library. See <http://d3js.org/> for more information on D3.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
