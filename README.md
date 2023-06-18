@@ -1,11 +1,11 @@
-About r-pairsd3
-===============
+About r-pairsd3-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pairsd3-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/garthtarr/pairsD3/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pairsd3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Creates an interactive scatterplot matrix using the D3 JavaScript library. See <http://d3js.org/> for more information on D3.
 
